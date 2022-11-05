@@ -9,6 +9,7 @@ export default function Customer() {
         <input type="text" placeholder="Last Name" />
         <input type="email" placeholder="Email" />
         <input type="number" placeholder="Phone Number" />
+        <button type="submit">Add</button>
       </form>
     </div>
   );
