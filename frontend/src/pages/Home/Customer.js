@@ -14,6 +14,19 @@ export default function Customer() {
           <FaPlus />
         </button>
       </form>
+      <div class="customer_list">
+        {this.state.map((customer) => {
+          return (
+            <div class="card">
+              <img src={customer.image} alt="" />
+              <p>{customer.fname}</p>
+              <p>{customer.lname}</p>
+              <p>{customer.email}</p>
+              <p>{customer.phone}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
